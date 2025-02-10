@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="heading">Enter Your Birth Date</h2>
+
+        <div class="block-con">
+
+            <div class="block">
+                <label for="day">Day</label>
+                <input type="number" id="day" placeholder="DD" min="1" max="31">
+            </div>
+            <div class="block">
+                <label for="month">Month</label>
+                <input type="number" id="month" placeholder="MM" min="1" max="12">
+            </div>
+            <div class="block">
+                <label for="year">Year</label>
+                <input type="number" id="year" placeholder="YYYY" min="1900">
+            </div>
+        </div>
+        <button onclick="calculateAge()">Calculate Age</button>
+       
+        <div hidden class="result" id="result">
+            
+           <h1><span id="yy">--</span>Year.</h1>
+           <h1><span id="mm">--</span>Month. </h1>
+           <h1><span id="dd">--</span>Days.</h1>
+        </div>
+        <img class="img" src="growth.gif" alt="">
+        <img class="earth  " src="earth.gif"  alt="">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
